@@ -1,6 +1,6 @@
 import streamlit as st
 from cancer import predict_fractal_dimension_worst
-st.title('Cáncer💉🩸')
+st.title('Cáncer')
 st.sidebar.image('logofcq.png', width = 100)
 st.sidebar.write(''' Team Robert's
 ''')
