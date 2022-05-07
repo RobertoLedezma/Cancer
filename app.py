@@ -1,6 +1,5 @@
 import streamlit as st
-from cancer import predict_fractal_dimension_worst
-st.title('Cáncer')
+st.title('Cáncer💉🩸')
 st.sidebar.image('logofcq.png', width = 100)
 st.sidebar.write(''' Team Robert's
 ''')
@@ -101,8 +100,6 @@ if cancer =='Mama':
    df1.isnull().sum()
    df1 = df1.dropna(axis=1)
    df1.shape
-   st.subheader('Tipo de diagnóstico')
-   df1.dtypes
    st.subheader('Evaluación de tumor')
    from sklearn.preprocessing import LabelEncoder
    labelencoder_Y = LabelEncoder()
@@ -164,10 +161,10 @@ if cancer =='Mama':
 
    st.subheader('Selecciona el valor 1 o 0 para conocer si el tumor es benigno o maligno')
    diagnosis = st.selectbox('Valores',[0,1])
-   if diagnosis == 0:
+   if diagnosis==0:
      st.write('Benigno✅')
-   if diagnosis == 1:
-     st.write('Maligno:no_entry:')
+   if diagnosis==1:
+     st.write('Maligno')
    
    st.subheader('Ingresa al siguiente link para saber más sobre el cáncer de mama')
    st.write('Video')
