@@ -1,3 +1,4 @@
+from cancer import predict_fractal_dimension_worst
 def predict_cual_consideras_que_es_el_tipo_de_cancer_que_mas_se_presenta_(edad=None,
                                                                           sexo=None,
                                                                           peso=None,
